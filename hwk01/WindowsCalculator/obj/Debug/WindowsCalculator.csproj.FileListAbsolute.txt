@@ -1,0 +1,10 @@
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\bin\Debug\WindowsCalculator.exe.config
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\bin\Debug\WindowsCalculator.exe
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\bin\Debug\WindowsCalculator.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\obj\Debug\WindowsCalculator.Form1.resources
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\obj\Debug\WindowsCalculator.Properties.Resources.resources
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\obj\Debug\WindowsCalculator.csproj.GenerateResource.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\obj\Debug\WindowsCalculator.csproj.CoreCompileInputs.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\obj\Debug\WindowsCalculator.exe
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\obj\Debug\WindowsCalculator.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk01\WindowsCalculator\obj\Debug\WindowsCalculator.csprojAssemblyReference.cache
