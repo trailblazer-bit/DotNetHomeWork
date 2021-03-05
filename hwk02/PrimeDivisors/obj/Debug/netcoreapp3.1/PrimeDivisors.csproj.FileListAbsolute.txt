@@ -1,0 +1,13 @@
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\bin\Debug\netcoreapp3.1\PrimeDivisors.exe
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\bin\Debug\netcoreapp3.1\PrimeDivisors.deps.json
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\bin\Debug\netcoreapp3.1\PrimeDivisors.runtimeconfig.json
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\bin\Debug\netcoreapp3.1\PrimeDivisors.runtimeconfig.dev.json
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\bin\Debug\netcoreapp3.1\PrimeDivisors.dll
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\bin\Debug\netcoreapp3.1\PrimeDivisors.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\obj\Debug\netcoreapp3.1\PrimeDivisors.csprojAssemblyReference.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\obj\Debug\netcoreapp3.1\PrimeDivisors.AssemblyInfoInputs.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\obj\Debug\netcoreapp3.1\PrimeDivisors.AssemblyInfo.cs
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\obj\Debug\netcoreapp3.1\PrimeDivisors.csproj.CoreCompileInputs.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\obj\Debug\netcoreapp3.1\PrimeDivisors.dll
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\obj\Debug\netcoreapp3.1\PrimeDivisors.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk02\PrimeDivisors\obj\Debug\netcoreapp3.1\PrimeDivisors.genruntimeconfig.cache
