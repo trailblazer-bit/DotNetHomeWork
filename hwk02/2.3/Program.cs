@@ -8,14 +8,14 @@ namespace _2._3
         static bool[] is_Prime = new bool[max];
         static void Main(string[] args)
         {
-            init();
+            Init();
             //0和1都不是素数
             is_Prime[0] = is_Prime[1] = false;
             Console.WriteLine("从2到100之间的素数有:");
             CountPrime();
 
         }
-        static void init()
+        static void Init()
         {
             for (int i = 0; i < is_Prime.Length; i++)
                 is_Prime[i] = true;
