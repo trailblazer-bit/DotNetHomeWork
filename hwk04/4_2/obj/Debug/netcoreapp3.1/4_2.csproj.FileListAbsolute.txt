@@ -1,0 +1,13 @@
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\bin\Debug\netcoreapp3.1\4_2.exe
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\bin\Debug\netcoreapp3.1\4_2.deps.json
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\bin\Debug\netcoreapp3.1\4_2.runtimeconfig.json
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\bin\Debug\netcoreapp3.1\4_2.runtimeconfig.dev.json
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\bin\Debug\netcoreapp3.1\4_2.dll
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\bin\Debug\netcoreapp3.1\4_2.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\obj\Debug\netcoreapp3.1\4_2.csprojAssemblyReference.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\obj\Debug\netcoreapp3.1\4_2.AssemblyInfoInputs.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\obj\Debug\netcoreapp3.1\4_2.AssemblyInfo.cs
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\obj\Debug\netcoreapp3.1\4_2.csproj.CoreCompileInputs.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\obj\Debug\netcoreapp3.1\4_2.dll
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\obj\Debug\netcoreapp3.1\4_2.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk04\4_2\obj\Debug\netcoreapp3.1\4_2.genruntimeconfig.cache
