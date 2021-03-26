@@ -1,0 +1,13 @@
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\bin\Debug\netcoreapp3.1\OrderManageSystem.exe
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\bin\Debug\netcoreapp3.1\OrderManageSystem.deps.json
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\bin\Debug\netcoreapp3.1\OrderManageSystem.runtimeconfig.json
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\bin\Debug\netcoreapp3.1\OrderManageSystem.runtimeconfig.dev.json
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\bin\Debug\netcoreapp3.1\OrderManageSystem.dll
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\bin\Debug\netcoreapp3.1\OrderManageSystem.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\obj\Debug\netcoreapp3.1\OrderManageSystem.csprojAssemblyReference.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\obj\Debug\netcoreapp3.1\OrderManageSystem.AssemblyInfoInputs.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\obj\Debug\netcoreapp3.1\OrderManageSystem.AssemblyInfo.cs
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\obj\Debug\netcoreapp3.1\OrderManageSystem.csproj.CoreCompileInputs.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\obj\Debug\netcoreapp3.1\OrderManageSystem.dll
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\obj\Debug\netcoreapp3.1\OrderManageSystem.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk05\OrderManageSystem\obj\Debug\netcoreapp3.1\OrderManageSystem.genruntimeconfig.cache
