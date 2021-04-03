@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OrderManageSystem
 {
-    class Good
+    public class Good
     {
         public string Name { get; set; }
         public double Price { get; set; }
@@ -21,7 +21,8 @@ namespace OrderManageSystem
 
         public override bool Equals(object obj)
         {
-            return obj is Good good &&
+            Good good = obj as Good;
+            return good!=null &&
                    Name == good.Name &&
                    Price == good.Price;
         }

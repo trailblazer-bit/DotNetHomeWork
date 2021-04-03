@@ -4,14 +4,28 @@ using System.Text;
 
 namespace OrderManageSystem
 {
-    class Order
+    public class Order:IComparable
     {
         //订单明细集合
-        private List<OrderDetail> orderDetails;
+        private List<OrderDetail> orderDetails=new List<OrderDetail>();
 
         public int ID { get; set; }
         public string CustomerName { get; set; }
         public DateTime OrderTime { get; set; }
+
+
+        //获取订单的总金额
+        public double TotalPrice {
+            get
+            {
+                double sum = 0.0;
+                foreach (OrderDetail item in orderDetails)
+                {
+                    sum += item.GoodPrice * item.GoodNum;
+                }
+                return sum;
+            }
+        }
 
         public List<OrderDetail> OrderDetails
         {
@@ -23,35 +37,39 @@ namespace OrderManageSystem
             this.ID = id;
             this.CustomerName = customerName;
             this.OrderTime = orderTime;
-            orderDetails = new List<OrderDetail>();
         }
 
-        //获取订单的总金额
-        public double GetTotalPrice()
-        {
-            double sum = 0.0;
-            foreach (OrderDetail item in orderDetails)
-            {
-                sum += item.GoodPrice * item.GoodNum;
-            }
-            return sum;
-        }
 
         //订单号不能相同
         public override bool Equals(object obj)
         {
-            return obj is Order order &&
+            Order order= obj as Order;
+            return order!=null &&
                    ID == order.ID;
         }
 
         public override string ToString()
         {
-            return "订单号" + ID + " 下单客户:" + CustomerName + " 下单时间:" + OrderTime+" 订单总金额:"+GetTotalPrice();
+            StringBuilder str = new StringBuilder();
+            str.Append("订单号" + ID + " 下单客户:" + CustomerName + " 下单时间:" + OrderTime + " 订单总金额:" + TotalPrice+"\n");
+            for (int i = 0; i < OrderDetails.Count; i++)
+            {
+                str.Append(i + 1 + " " + OrderDetails[i]+"\n");
+            }
+            str.Append("--------------------");
+            return str.ToString();
         }
 
         public override int GetHashCode()
         {
             return HashCode.Combine(orderDetails, ID, CustomerName, OrderTime, OrderDetails);
+        }
+
+        public int CompareTo(object obj)
+        {
+            Order order = obj as Order;
+            if (obj == null) return 0;
+            else return this.ID.CompareTo(order.ID);
         }
     }
 }

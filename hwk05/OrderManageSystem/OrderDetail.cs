@@ -4,13 +4,19 @@ using System.Text;
 
 namespace OrderManageSystem
 {
-    class OrderDetail
+    public class OrderDetail
     {
         public string GoodName { get; set; }
         public double GoodPrice { get; set; }
         public int GoodNum { get; set; }
 
-        public double TotalPrice { get; set; }
+        public double TotalPrice
+        {
+            get
+            {
+                return GoodPrice * GoodNum;
+            }
+        }
 
         //添加依赖，利用对应的商品初始化订单明细
         public OrderDetail(Good good,int goodNum)
@@ -18,7 +24,6 @@ namespace OrderManageSystem
             this.GoodName = good.Name;
             this.GoodPrice = good.Price;
             this.GoodNum = goodNum;
-            this.TotalPrice = good.Price * goodNum;
         }
 
         public override string ToString()
@@ -28,11 +33,9 @@ namespace OrderManageSystem
 
         public override bool Equals(object obj)
         {
-            return obj is OrderDetail detail &&
-                   GoodName == detail.GoodName &&
-                   GoodPrice == detail.GoodPrice &&
-                   GoodNum == detail.GoodNum &&
-                   TotalPrice == detail.TotalPrice;
+            OrderDetail detail = obj as OrderDetail;
+            return detail != null &&
+                   GoodName == detail.GoodName;
         }
 
         public override int GetHashCode()
