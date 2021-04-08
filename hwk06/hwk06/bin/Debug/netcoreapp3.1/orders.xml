@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <ID>123</ID>
+    <CustomerName>zzzzz</CustomerName>
+    <OrderTime>2021-04-08T14:36:56.2131684+08:00</OrderTime>
+    <OrderDetails>
+      <OrderDetail>
+        <GoodName>篮球</GoodName>
+        <GoodPrice>56</GoodPrice>
+        <GoodNum>3</GoodNum>
+      </OrderDetail>
+    </OrderDetails>
+  </Order>
+</ArrayOfOrder>

@@ -4,6 +4,7 @@ using System.Text;
 
 namespace OrderManageSystem
 {
+    [Serializable]
     public class Order:IComparable
     {
         //订单明细集合

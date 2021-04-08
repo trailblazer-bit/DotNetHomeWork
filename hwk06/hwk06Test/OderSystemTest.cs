@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using OrderManageSystem;
 using System;
+using System.IO;
 
 namespace hwk06Test
 {
@@ -154,6 +155,33 @@ namespace hwk06Test
 
             service.ShowOrder();
 
+        }
+
+        [TestMethod]
+        public void TestExport()
+        {
+            OrderService service = new OrderService();
+            service.AddOrder(orders[0]);
+            service.AddOrder(orders[1]);
+            service.AddOrder(orders[2]);
+
+            //判断序列化生成的文件是否存在
+            service.Export("testOrders.xml");
+            DateTime time = DateTime.Now;
+            Assert.IsTrue(File.Exists("testOrders.xml"));
+
+            //判断生成的文件是否是最新的
+            FileInfo file = new FileInfo("testOrders.xml");
+            Assert.AreEqual(file.LastWriteTime,time);
+        }
+
+        [TestMethod]
+        public void TestImport()
+        {
+            OrderService service = new OrderService();
+            service.Import("testOrders.xml");
+            //是否导入成功
+            CollectionAssert.AreEqual(service.OrderList, orders);
         }
     }
 }

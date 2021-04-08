@@ -110,20 +110,20 @@ namespace OrderManageSystem
         }
 
         //序列化
-        public void Export()
+        public void Export(String filePath)
         {
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Order>));
-            using (FileStream fileStream = new FileStream("orders.xml", FileMode.Create))
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
             {
                 xmlSerializer.Serialize(fileStream, orderList);
             }
         }
 
         //反序列化
-        public void Import()
+        public void Import(String filePath)
         {
             XmlSerializer xmlSerializer1 = new XmlSerializer(typeof(List<Order>));
-            using (FileStream fs = new FileStream("orders.xml", FileMode.Open))
+            using (FileStream fs = new FileStream(filePath, FileMode.Open))
             {
                 orderList = xmlSerializer1.Deserialize(fs) as List<Order>;
             }

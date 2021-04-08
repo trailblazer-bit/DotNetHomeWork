@@ -15,7 +15,7 @@ namespace OrderManageSystem
             //订单服务开启前从本地xml文件中导入订单
             if (File.Exists("orders.xml"))
             {
-                service.Import();
+                service.Import("orders.xml");
             }
 
             bool _continue = true;
@@ -43,7 +43,9 @@ namespace OrderManageSystem
             }
 
             //将订单序列化到本地文件中
-            service.Export();
+            service.Export("orders.xml");
+            String xml = File.ReadAllText("orders.xml");
+            Console.WriteLine(xml);
         }
 
         public static void AddOrder()

@@ -4,6 +4,7 @@ using System.Text;
 
 namespace OrderManageSystem
 {
+    [Serializable]
     public class OrderDetail
     {
         public string GoodName { get; set; }
