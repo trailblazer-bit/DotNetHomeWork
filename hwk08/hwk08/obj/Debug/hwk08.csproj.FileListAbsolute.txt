@@ -1,0 +1,11 @@
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\obj\Debug\hwk08.csprojAssemblyReference.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\obj\Debug\hwk08.Form1.resources
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\obj\Debug\hwk08.Properties.Resources.resources
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\obj\Debug\hwk08.csproj.GenerateResource.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\obj\Debug\hwk08.csproj.CoreCompileInputs.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\bin\Debug\hwk08.exe.config
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\bin\Debug\hwk08.exe
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\bin\Debug\hwk08.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\obj\Debug\hwk08.exe
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\obj\Debug\hwk08.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk08\hwk08\obj\Debug\hwk08.NewOrderForm.resources
