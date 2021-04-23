@@ -1,0 +1,10 @@
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\bin\Debug\hwk09.exe.config
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\bin\Debug\hwk09.exe
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\bin\Debug\hwk09.pdb
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\obj\Debug\hwk09.csprojAssemblyReference.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\obj\Debug\hwk09.Form1.resources
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\obj\Debug\hwk09.Properties.Resources.resources
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\obj\Debug\hwk09.csproj.GenerateResource.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\obj\Debug\hwk09.csproj.CoreCompileInputs.cache
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\obj\Debug\hwk09.exe
+D:\Programming-language-program\vs2019 projects\c#\hwk09\hwk09\obj\Debug\hwk09.pdb

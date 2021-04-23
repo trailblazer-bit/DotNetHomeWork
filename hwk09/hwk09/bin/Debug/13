@@ -1,0 +1,451 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="http://www.fractal-technology.com">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+                                                            <title>Contributing to Society - Baidu ESG</title>
+            <meta name="keywords" content="Baidu ESG" />
+    <meta name="description" content="Baidu ESG" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/plugs.css">
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/page.css">
+    <link rel="stylesheet" href="/Public/static/themes/en/css/jjl.css">
+    <script src="/Public/static/themes/en/js/plugs/jquery-1.11.3.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/jquery.placeholder.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/TweenMax.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/video.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/slick.js"></script>
+    <script src="/Public/static/themes/en/js/global.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/xRoll.js"></script>
+</head>
+<body>
+                <style>
+        .empty-data{ width:100%; font-size:25px; padding-top:8%; padding-bottom:8%; text-align: center;}
+        </style>
+            <style>
+#myalert{ display:none; }
+.recruit .block1{ height: auto}
+.layer{background:url(/Public/static/themes/image/con_mask.png);;position:fixed;left:0;right: 0;top:0;bottom: 0;width:100%;height:100%;z-index: 1000000;}
+.layer .myalert{padding:30px;background:#fff;width:240px;position:absolute;margin-top:-100px;top:50%;left:50%;margin-left:-120px;text-align:center; z-index: 100000}
+.layer .guan{background:url(/Public/static/themes/image/clos.png) no-repeat center; display:block;width:23px;height:23px;position:absolute;top:10px;right:10px;}
+.layer .text{padding-bottom:15px;font-size:16px;color:#474747;}
+.layer .button{background:none;border:1px solid #bbbbbb;width:91px;height:29px;font:14px/100% "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;color: #707070;}
+</style>
+<div id="myalert" class="layer">
+    <div class="myalert">
+        <a href="javascript:;" onclick="myalert_hide();" class="guan"></a>
+        <div class="text">Please enter keywords</div>
+        <a><button class="button" id="my_ok" style="cursor:pointer ;opacity: 1;transform: translateY(0px);">OK</button></a>
+    </div>
+</div>
+<script>
+function my_alert(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function my_alert2(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function myalert_hide(){
+    $('#myalert').hide();
+}
+</script>
+    <div class="gotop"><div class="s">top</div></div>
+
+<div class="x-header ">
+    <div class="menu-head">
+        <div class="logo"><a href="/en/index.html" class="p-show">
+    <img src="/Uploads/Picture/2020/05/25/s5ecb5f6d3fdfe.png" alt="" title="">
+</a>
+<a href="/en/index.html" class="m-show">
+    <img src="/Uploads/Picture/2020/05/25/s5ecb5f6d3fdfe.png" alt="" title="">
+</a></div>        <div class="menu-btn m-show"><span class="line"></span></div>
+        <div class="language">
+            <a href="/">中</a>
+        </div>
+    </div>
+
+    <div class="nav-mod" flex="dir:top box:justify">
+        <!-- <div class="search-box m-show" flex="dir:left box:last">
+            <div class="search-txt"><input type="text" class="search-input" placeholder="search..."></div>
+            <button class="search-submit" type="submit"></button>
+        </div> -->
+        <div class="nav-box nav-lv1"><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/index.html" >Home</a></div>
+        <!-- 二级导航需要同步 -->
+            </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/administration.html" >Our Management</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/detail/103.html" >ESG Concept</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/detail/102.html" >ESG Management</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/carbon.html" >Our Practices</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/carbon.html" >Promoting Sustainability</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/privacy.html" >Building Trust</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/development.html" >Nurturing Talents</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/Service.html" >Improving Service</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/innovation.html" >Contributing to Society</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/governance.html" >Corporate Governance</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/reportsNews.html" >Reports and News</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/esg_download.html" >Relevant Reports</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/news_list.html" >Relevant News</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/contact.html" >Contact Us</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/contact.html" >Contact Information</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/feedbac.html" >Feedback</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><script>
+    var IsIndex   = "28";
+    var now2 = window.location.pathname;
+    var nowurl    = "/en/innovation.html";
+    var parent_id = "47";
+    var parents_id = "21";
+    if( IsIndex == 37){
+        $('.nav-lv1 .nav-lv1-item:first').addClass('cur').siblings().removeClass('cur');
+    }
+    if(IsIndex == 35){
+        $('.nav-lv1 .nav-lv1-item').eq(4).addClass('cur').siblings().removeClass('cur');
+    }
+    if(IsIndex == 32 || IsIndex == 33 || IsIndex == 34 || IsIndex == 31){
+        $('.nav-lv1 .nav-lv1-item').eq(3).addClass('cur').siblings().removeClass('cur');
+    }
+    if(parents_id == 21){
+        $('.nav-lv1 .nav-lv1-item').eq(2).addClass('cur').siblings().removeClass('cur');
+    }
+    $(".nav-lv1-tit a").each( function() {
+        var _that = $(this);
+        var listurlone = _that.attr('href');
+        var data_name = _that.attr('data-name');
+        if( nowurl == listurlone ) {
+            _that.parent().parent().addClass('cur').siblings().removeClass('cur');
+        }
+    });
+</script></div>    </div>
+</div>
+        <script src="/Public/static/themes/js/spin.min.js"></script>
+<script src="/Public/static/themes/js/iscroll-probe.js"></script>
+<div class="x-container">
+    <!-- 查看更多按钮  .more.noborder为无边框 -->
+    <!-- <a class="more" href="#">
+        <div class="s1">查看更多</div>
+        <div class="arr1"></div>
+    </a> -->
+    <div class="internalControl1 internalControl1_copy">
+        <div class="x-wrap">
+                        <div class="x-title h40">Our Practices</div>
+            <div class="cont">
+                <!-- 链接已加，如需要切换功能，.tab-cont中的.tab-item数量与.scroll-item对应即可 -->
+                <div class="tab-mod">
+                    <div class="scroll-tab tab-bar">
+                        <div class="scroll-prev xfont-icon"></div>
+                        <div class="scroll-next xfont-icon"></div>
+                        <div class="scroll-box">
+                            <div class="scroll-track h24">
+                                                                    <div class="scroll-item tab-term ">
+                                        <div class="top">
+                                            <div class="ico">
+                                                <div class="eng">E</div>
+                                            </div>
+                                        </div>
+                                        <div class="bot">
+                                            <div class="list">
+                                                <div class="li h24 "><a href="/en/carbon.html">Promoting Sustainability</a></div>                                            </div>
+                                        </div>
+                                    </div>                                    <div class="scroll-item tab-term act cur">
+                                        <div class="top">
+                                            <div class="ico">
+                                                <div class="eng">S</div>
+                                            </div>
+                                        </div>
+                                        <div class="bot">
+                                            <div class="list">
+                                                <div class="li h24 "><a href="/en/privacy.html">Building Trust</a></div><div class="li h24 "><a href="/en/development.html">Nurturing Talents</a></div><div class="li h24 "><a href="/en/Service.html">Improving Service</a></div><div class="li h24 cur"><a href="/en/innovation.html">Contributing to Society</a></div>                                            </div>
+                                        </div>
+                                    </div>                                    <div class="scroll-item tab-term ">
+                                        <div class="top">
+                                            <div class="ico">
+                                                <div class="eng">G</div>
+                                            </div>
+                                        </div>
+                                        <div class="bot">
+                                            <div class="list">
+                                                <div class="li h24 "><a href="/en/governance.html">Corporate Governance</a></div>                                            </div>
+                                        </div>
+                                    </div>                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-cont">
+                        <div class="tab-item">
+                            <div class="tit1 h16">Upholding the social responsibility concept of “Do Better with Tech”, Baidu has been committing to social causes and philanthropy and has gradually formed a social welfare project system with Baidu characteristics. Upon the outbreak of COVID-19, we immediately leveraged our resources and technological expertise to help fight against the pandemic.</div>                            <div class="list" id="datalist">
+                                        <div class="item">
+            <div class="txt h24">
+                <a href="/en/detail/419.html" target="_blank">Responding to COVID-19</a>
+                                <a href="/en/detail/419.html" target="_blank" class="h16">Since the outbreak of COVID-19, we have been taking the lead in providing financial and material support to society and developing a comprehensiv...</a>
+                <div class="btn1">
+                    <a class="more noborder" href="/en/detail/419.html" target="_blank">
+                        <div class="s1">Learn More</div>
+                        <div class="arr1"></div>
+                    </a>
+                </div>
+            </div>
+        </div>        <div class="item">
+            <div class="txt h24">
+                <a href="/en/detail/420.html" target="_blank">AI for Social Good </a>
+                                <a href="/en/detail/420.html" target="_blank" class="h16">In 2020, Baidu launched the Baidu Stars Plan, which serves as Baidu’s corporate social responsibility (CSR) platform and an ecosystem capability...</a>
+                <div class="btn1">
+                    <a class="more noborder" href="/en/detail/420.html" target="_blank">
+                        <div class="s1">Learn More</div>
+                        <div class="arr1"></div>
+                    </a>
+                </div>
+            </div>
+        </div>                            </div>
+                        </div>
+                        <!-- <div class="tab-item">信息安全和数据隐私</div>
+                        <div class="tab-item">人力资本发展</div>
+                        <div class="tab-item">低碳发展</div>
+                        <div class="tab-item">社会责任与创新</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+
+        
+        //  js需要同步
+            if(screen.width<1021){
+                var w1 = $(".internalControl1_copy .cont .scroll-box").width();
+                console.log(w1)
+                $(".internalControl1_copy.internalControl1 .cont .scroll-tab .scroll-item").css({
+                    "width":w1
+                })
+                scrollTab('.internalControl1_copy .tab-mod');
+
+            }
+            $(".internalControl1_copy.internalControl1 .cont .scroll-tab .scroll-item .bot .list .li").on("click",function(){
+                $(this).addClass("cur").siblings().removeClass("cur");
+                $(this).parents(".scroll-item").siblings().find(".list").children(".li").removeClass("cur");
+                $(this).parents(".scroll-item").addClass("act").siblings().removeClass("act");
+            })
+
+        //  o-滚动模块父级元素； v-是否垂直滚动，默认false
+        function scrollTab(o, v) {
+            var scrollbox = $(o).find('.scroll-box'),
+                scrollitem = scrollbox.find('.scroll-item'),
+                prev = $(o).find('.scroll-prev'),
+                next = $(o).find('.scroll-next');
+
+            v = v || false;
+
+            var myScroll = new IScroll(scrollbox[0], {
+                mouseWheel: false,
+                scrollX: !v,
+                scrollY: v,
+                click: true,
+                tap: true
+            });
+
+            $(window).on('load', function () {
+                myScroll.scrollToElement(o + ' .scroll-item.cur', 0, true, null);
+            });
+
+            scrollbox.on('touchmove', function (e) {
+                e.preventDefault();
+            });
+
+            prev.on('click', function () {
+                if (!$(this).hasClass('disabled')) {
+                    $(o + ' .scroll-item.cur').prev().trigger('click');
+                }
+            });
+
+            next.on('click', function () {
+                if (!$(this).hasClass('disabled')) {
+                    $(o + ' .scroll-item.cur').next().trigger('click');
+                }
+            });
+
+            scrollitem.on('click', function () {
+                var _this = $(this);
+                var _idx = _this.index();
+
+                if (_idx > 0) {
+                    prev.removeClass('disabled');
+                } else {
+                    prev.addClass('disabled');
+                }
+
+                if (_idx < scrollitem.length - 1) {
+                    next.removeClass('disabled');
+                } else {
+                    next.addClass('disabled');
+                }
+
+                myScroll.scrollToElement(this, 500, !v, v, IScroll.utils.ease.circular);
+
+            });
+        }
+
+    });
+</script>
+    <div class="x-footer">
+  <div class="x-wrap">
+    <!-- <p class="ftbj"><a href="http://www.fractal-technology.com" target="_blank">网站建设</a>：<a
+        href="http://www.fractal-technology.com" target="_blank">北京分形科技</a></p> -->
+    <div class="f1" style="min-height:14px;"><div class="about">Related websites<span class="mh">:</span></div>
+<div class="website">
+    <a  href="http://home.baidu.com/" target="_blank">About Baidu</a><a  href="http://ir.baidu.com/" target="_blank">About Baidu Investors</a><a  href="http://privacy.baidu.com" target="_blank">Baidu Privacy Protection Platform</a><a  href="http://help.baidu.com" target="_blank">Baidu User Service Center</a><a  href="http://help.baidu.com/personalinformation" target="_blank">Personal Information Protection</a></div></div>    <div class="f2">
+      <a>Copyright reserved © 2021 Baidu</a>
+    </div>
+    <div class="f3" style="min-height:14px;"><a  href="/en/contact.html">Contact Us</a></div>  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,458 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="http://www.fractal-technology.com">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+                                                        <title>Business Ethics - Baidu ESG</title>
+                <meta name="keywords" content="Baidu ESG" />
+    <meta name="description" content="The building of business ethics and compliance has always been the focus of Baidu. As a multinational corporation listed in the United States and oper" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/plugs.css">
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/page.css">
+    <link rel="stylesheet" href="/Public/static/themes/en/css/jjl.css">
+    <script src="/Public/static/themes/en/js/plugs/jquery-1.11.3.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/jquery.placeholder.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/TweenMax.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/video.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/slick.js"></script>
+    <script src="/Public/static/themes/en/js/global.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/xRoll.js"></script>
+</head>
+<body>
+                <style>
+        .empty-data{ width:100%; font-size:25px; padding-top:8%; padding-bottom:8%; text-align: center;}
+        </style>
+            <style>
+#myalert{ display:none; }
+.recruit .block1{ height: auto}
+.layer{background:url(/Public/static/themes/image/con_mask.png);;position:fixed;left:0;right: 0;top:0;bottom: 0;width:100%;height:100%;z-index: 1000000;}
+.layer .myalert{padding:30px;background:#fff;width:240px;position:absolute;margin-top:-100px;top:50%;left:50%;margin-left:-120px;text-align:center; z-index: 100000}
+.layer .guan{background:url(/Public/static/themes/image/clos.png) no-repeat center; display:block;width:23px;height:23px;position:absolute;top:10px;right:10px;}
+.layer .text{padding-bottom:15px;font-size:16px;color:#474747;}
+.layer .button{background:none;border:1px solid #bbbbbb;width:91px;height:29px;font:14px/100% "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;color: #707070;}
+</style>
+<div id="myalert" class="layer">
+    <div class="myalert">
+        <a href="javascript:;" onclick="myalert_hide();" class="guan"></a>
+        <div class="text">Please enter keywords</div>
+        <a><button class="button" id="my_ok" style="cursor:pointer ;opacity: 1;transform: translateY(0px);">OK</button></a>
+    </div>
+</div>
+<script>
+function my_alert(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function my_alert2(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function myalert_hide(){
+    $('#myalert').hide();
+}
+</script>
+    <div class="gotop"><div class="s">top</div></div>
+
+<div class="x-header ">
+    <div class="menu-head">
+        <div class="logo"><a href="/en/index.html" class="p-show">
+    <img src="/Uploads/Picture/2020/05/25/s5ecb5f6d3fdfe.png" alt="" title="">
+</a>
+<a href="/en/index.html" class="m-show">
+    <img src="/Uploads/Picture/2020/05/25/s5ecb5f6d3fdfe.png" alt="" title="">
+</a></div>        <div class="menu-btn m-show"><span class="line"></span></div>
+        <div class="language">
+            <a href="/">中</a>
+        </div>
+    </div>
+
+    <div class="nav-mod" flex="dir:top box:justify">
+        <!-- <div class="search-box m-show" flex="dir:left box:last">
+            <div class="search-txt"><input type="text" class="search-input" placeholder="search..."></div>
+            <button class="search-submit" type="submit"></button>
+        </div> -->
+        <div class="nav-box nav-lv1"><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/index.html" >Home</a></div>
+        <!-- 二级导航需要同步 -->
+            </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/administration.html" >Our Management</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/detail/103.html" >ESG Concept</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/detail/102.html" >ESG Management</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/carbon.html" >Our Practices</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/carbon.html" >Promoting Sustainability</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/privacy.html" >Building Trust</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/development.html" >Nurturing Talents</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/Service.html" >Improving Service</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/innovation.html" >Contributing to Society</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/governance.html" >Corporate Governance</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/reportsNews.html" >Reports and News</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/esg_download.html" >Relevant Reports</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/news_list.html" >Relevant News</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/contact.html" >Contact Us</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/contact.html" >Contact Information</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/feedbac.html" >Feedback</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><script>
+    var IsIndex   = "42";
+    var now2 = window.location.pathname;
+    var nowurl    = "/en/governance.html";
+    var parent_id = "48";
+    var parents_id = "21";
+    if( IsIndex == 37){
+        $('.nav-lv1 .nav-lv1-item:first').addClass('cur').siblings().removeClass('cur');
+    }
+    if(IsIndex == 35){
+        $('.nav-lv1 .nav-lv1-item').eq(4).addClass('cur').siblings().removeClass('cur');
+    }
+    if(IsIndex == 32 || IsIndex == 33 || IsIndex == 34 || IsIndex == 31){
+        $('.nav-lv1 .nav-lv1-item').eq(3).addClass('cur').siblings().removeClass('cur');
+    }
+    if(parents_id == 21){
+        $('.nav-lv1 .nav-lv1-item').eq(2).addClass('cur').siblings().removeClass('cur');
+    }
+    $(".nav-lv1-tit a").each( function() {
+        var _that = $(this);
+        var listurlone = _that.attr('href');
+        var data_name = _that.attr('data-name');
+        if( nowurl == listurlone ) {
+            _that.parent().parent().addClass('cur').siblings().removeClass('cur');
+        }
+    });
+</script></div>    </div>
+</div>
+        <div class="x-container">
+	<div class="risk_control1">
+		<div class="x-wrap">
+			<div class="title">
+				                    <div class="h40">Business Ethics</div>			</div>
+			<div class="cont h16 justify"><p>
+	<br />
+</p>
+<p>
+	<span style="font-size:18px;">The building of business ethics and compliance has always been the focus of Baidu. As a multinational corporation listed in the United States and operating in multiple countries, our business ethics enjoys a legal basis for being in compliance with advanced laws, regulations, and standards from around the world. We internalize those laws, regulations, and standards to form our business ethics system according to Baidu’s &nbsp;business characteristics. In China, we strictly abide by the <em>Anti-Monopoly Law of the People’s Republic of China</em>, <em>the Anti-Unfair Competition Law of the People’s Republic of China, Interim Provisions of the State Administration for Industry and Commerce on Prohibition of Commercial Bribery (1996)</em> , and other laws and regulations directly related to business ethics. We also follow articles in general or laws and regulations that are highly related to operations such as the <em>Company Law of the People’s Republic of China and the Government Procurement Law of the People’s Republic of China</em>. Globally, we follow the <em>Public Company Accounting Reform and Investor Protection Act 2002 (the Sarbanes — Oxley Act)</em>, the <em>United Nations Convention Against Corruption, the Business Principles for Countering Bribery</em> (developed by Transparency International in 2003 and revised in 2013), and anti-corruption and anti-bribery legislation in our existing and potential overseas markets.</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<strong style="font-size:18px;">Internal management</strong> 
+</p>
+<p>
+	<span style="font-size:18px;">Through long-term development and improvement, Baidu has formed a solid business ethics system.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>System building</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">We consulted and absorbed the Business Principles for Countering Bribery introduced by Transparency International, universal standards or requirements developed by well-known international institutions when establishing and improving our anti-corruption policies and systems. At present, we have formed a system consisting of the Baidu Professional Ethics and Code of Conduct as basic and fundamental document and other rules concerning business ethics, professional ethics, and anti-corruption issues as specific documents. Furthermore, our business departments at all level have developed their own rules and systems related to business ethics, including the Baidu Employee Manual, the Honesty and Integrity Agreement, the Sustainable Development and Corporate Social Responsibility Requirements , etc. These rules showcase scenarios and details of the above-mentioned fundamental regulations concerning business ethics and broaden the scope of Baidu’s business ethics.</span> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603dff05af8e1.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603dff19b4193.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603dff2ebcec4.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p style="text-align:left;">
+	<strong><span style="font-size:18px;">Governance system</span></strong> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;">Our anti-corruption organization consists of three levels of management, including the Board of Directors, the Committee of Professional Ethics, and the Professional Ethics Department.</span> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603dff4f77743.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;">According to the “three lines of defense” risk management framework, the Professional Ethics Department independently exercises its investigative rights following the investigation procedures of case clues, acceptance, investigation, handling conclusions, and follow-up. In 2020, the Professional Ethics Department strengthened its initiatives in supervision and investigation, shifting from investigations following up the clues of cases to more preventive investigation and supervision.</span> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603dff6056b14.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;">In addition to compliance audit, special audit and other routine audit duties, our Internal Audit Department also assists with investigation of and reports on anti-fraud, anti-money laundering, and related matters. It fully communicates with the Professional Ethics Department before reporting to the Audit Committee in a regular manner. It cooperates with the Professional Ethics Department to enhance our business ethics. The Company’s senior management is required to support internal control, compliance, and audit, and should direct the Internal Audit Department’s work and listen to the audit results.</span> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;">For ethics violations, Baidu imposes penalties based on the severity of the case. We adopt zero-tolerance policies and have the right to terminate employment contracts for violations of the Baidu Professional Ethics Regulations on “red lines” management. If the relevant behavior constitutes a crime, it will then be transferred to law enforcement agencies to handle accordingly. For less severe violations, we issue notifications or warnings, as appropriate. Opinions and decisions on violations are concluded upon joint discussion&nbsp;by the Professional Ethics Department, Legal Department, and Human Resource Department, etc. The decisions are reviewed and approved by the Committee of Professional Ethics to ensure scientific, fair, and effective results.&nbsp;</span> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;">The Professional Ethics Department itself is under the supervision of all employees and the Board of Directors is entitled to address inquiries about the Professional Ethics Department’s work, which is part of the supervision and restriction of the department.</span> 
+</p>
+<p style="text-align:left;">
+	<strong><span style="font-size:18px;">Training and publicity</span></strong> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;">Baidu carried out a number of training and publicity activities to continuously enhance our internal business ethics and compliance awareness and create a compliance atmosphere.</span> 
+</p>
+<p style="text-align:left;">
+	<span><span style="font-size:18px;">For employees (including part-time employees and outsourced workers),</span><span style="font-size:18px;"></span><span style="font-size:18px;">&nbsp;</span></span><span style="font-size:18px;">there are three types of training, namely new employee orientation, regular employee training, and&nbsp;specialized training, ensuring that all staff keep professional ethics in mind. The training covers all regular employees of Baidu. And we keep all the training videos on our internal ‘Duxuetang’ learning platform for employees to learn at any time.</span> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603dff789a923.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;">For directors, we introduce Baidu’s compliance requirements for professional ethics through the quarterly report of the Professional Ethics Department to the Board of Directors. In 2020, Baidu’s professional ethics-related training totaled 1,928 hours.</span> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;">We have been publicizing business ethics and anti-corruption by permeating employees’ daily life in recent years. Through the intranet, the WeChat official account of Infoflow (Baidu’s internal communication app), the home page of the projection screen in the meeting rooms, the posters in elevators, the bulletin boards in toilets, and flashcards, we intensively publicize the regulation and information related to anti-corruption.&nbsp;</span> 
+</p>
+<p style="text-align:left;">
+	<strong style="font-size:18px;">Reporting</strong> 
+</p>
+<p>
+	<span style="font-size:18px;">In accordance with the Baidu Professional Ethics Reporting Management Regulations, we regulate, encourage and sup-port staff and outsiders to report suspected violations of discipline, law, and professional ethics of Baidu employees. We have set up four reporting methods: email, in-person reporting, professional ethics mailbox, and letter. The responsible personnel is required to handle it within 24 hours after receiving the report. We strictly protect the safety of whistleblowers who use our channels, whether staff or outsiders, and ensure they do not receive unfair treatment such as dismissal, de-motion, suspension, intimidation, harassment, or any form of retaliation. We ensure the confidentiality of reports and shall keep the details of the informant and the information of the reported case strictly confidential. For example, the reporting mailbox is managed by an authorized team of four people, including the director of the Professional Ethics Department, the director of the Internal Audit Department, an authorized representative from the Human Resources Department, and a case handler, so as to strictly ensure confidentiality of information by limiting the scope of information dissemination. The reporting information from all channels is received, registered, responded to, and reported by a dedicated person, who is also responsible for the confidentiality and management of information. We have also established a reward mechanism for reporting. Reporters who provide valuable assistance in investigating and handling the case deserve a cash reward. In 2020, the Professional Ethics Department received a total of 132 reports involving professional ethics issues. Among them, 37 cases are under investigation and 95 cases have been closed, saving the Company about CNY 17 million in economic losses.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Gift management</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">Baidu stipulates that employees and their families are not allowed to accept gifts (including but not limited to all kinds of goods, cash, shopping cards, all sorts of valuable securities), services, travel, or hospitality from agents, customers, suppliers, or partners. When given a gift, employees are obligated to explain the company’s policy of not accepting gifts and to decline. If they cannot decline a gift in person, they should return it later, and whether or not it is successfully returned, employees are required to report it to the gift and hospitality reporting system truthfully. For gifts that cannot be returned, the recipient shall submit the gift to the Baidu Foundation after reporting in the gift reporting system. The Foundation holds the Charity Auction Day twice a year to sell all collected gifts with all proceeds going to charitable activities.</span> 
+</p>
+<p>
+	<span style="font-size:18px;">In 2020, the gift reporting system received 3,119 gifts, and the two online auctions on those items welcomed 4,930 employees, raising CNY 564,000. In this way, we have maintained professional ethics and supported public welfare.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>External cooperation</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">We hope to gradually promote our concept of business ethics to the entire industry and even society, via external supervision and communications, and to help create a good business ethics atmosphere.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Extending cooperation</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">We actively join excellent industry organizations to strengthen our anti-fraud ability and keep sustainable development by innovation, cooperation and win-win sharing.</span> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603dff9e8a85d.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603dffb6518df.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p style="text-align:left;">
+	<strong></strong> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Cooperating with industry partners</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">We actively participate in our industry’s anti-corruption communication and cooperation. Since 2012, the integrity departments of Baidu, Alibaba (China) Technology Co., Ltd, and Shenzhen Tencent Computer Systems Company Limited (BAT) hold the “BAT Integrity Work Exchange” annually. With this mechanism, the three leading Internet companies set themes each year to regularly share their experience and discuss issues on establishing internal integrity. In 2020, Baidu conducted an exchange forum on anti-corruption with Xiaomi Inc. These thematic exchanges between industry players have not only provided Baidu with knowledge about &nbsp;public governance of industry compliance, but also helped Baidu and other companies to build a joint “firewall” for the top companies, leaving no space for corruption to create or exploit compliance loopholes in the industry. </span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Cooperating with government</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">In 2020, with the revision of the Anti-Monopoly Law of the People’s Republic of China, the State Administration for Market Regulation issued the Public Comments Requested on the Draft Guidelines for Anti-Monopoly in the Field of Platform Economy. The importance of “strengthening anti-monopoly and preventing the disorderly expansion of capital” was emphasized at meetings of the CPC Political Bureau and the Central Economic Work Conference. Anti-monopoly in the Internet industry is imperative. As a leader in China’s Internet industry, we actively cooperate with regulators at all levels to strictly prevent vicious competition, hindering competitors, restricting the market, abusing monopoly status, and being driven by “quick money” and “great profits” during operations.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Managing the value chain</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">We adopt the concept of full value chain management and control. We incorporate supply chain risks in risk identification, prevention, and control. We stipulate the ethics that we re-quire in our suppliers, and strictly manage the supply chain.</span> 
+</p>
+<p>
+	<span style="font-size:18px;">Baidu has formulated several internal management policies, such as the Management Rules for Suppliers and Baidu Measures for Supplier Daily Management and Handling Com-plaints, which covers supplier selection, access and elimination, evaluation, rating, and communication and feedback, and implemented hierarchical management of suppliers to fully guarantee scientific and effective procurement and supplier management. In 2020, we revised the Management Rules for Suppliers to require a part of performance-tested suppliers to develop internal systems related to anti-corruption and to in-corporate this requirement into the performance assessment system for such suppliers. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">Baidu carries out fine management throughout the entire process of cooperation with suppliers and regulates centralized procurement and independent procurement processes to minimize supply chain risks. We have formulated the Procurement Management System and General Rules on Operation, which stipulates that after confirming procurement, a detailed purchase order must be signed with the supplier. This order then should be submitted for approval by our Legal Affairs Department, our Finance Department, and other related departments in the second line of defense. Our Finance Department initiates payment only when approval is completed.</span> 
+</p>
+<p>
+	<span style="font-size:18px;">We strictly control the risk of corruption in the certified process and formulated the Sustainable Development and Corporate Social Responsibility Requirements for Partners targeting suppliers and agents. We require Certified suppliers (Suppliers with which Baidu has reached long-term and frequent cooperation. They are the majority of Baidu’s suppliers, which are mainly categorized into marketing suppliers and equipment and O&amp;M suppliers. The former covers public relations, media monitoring, design and production, meetings and activities, business trips, promotion activities, market research, communication channels, goods marketing, content production, media placement; the latter covers servers, network equipment, computer room O&amp;M, human resources outsourcing, computers, and other relevant equipment). to comply with the Procurement Department Code of Practice for Offline RFQs and Supplier Quotations and the Supplier Contact Guidelines, which regulate practices regarding quotes, price comparisons, and suppliers’ interaction with Baidu employees and their relatives.</span> 
+</p>
+<p>
+	<span style="font-size:18px;">We provide anti-corruption training and awareness-raising for suppliers at management and exchange meetings, and urge partners to actively comply with relevant ethics and market rules with our Honesty and Integrity Agreement and integrity clauses in our contract. We do not permit cooperation with external agencies that have participated in violations such as monopoly and fraud. Currently, an anti-corruption assessment is included in our evaluation and review of certified suppliers.</span> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;"><span style="font-family:Arial;font-size:18px;"> </span></span> 
+</p>
+<hr />
+<p>
+	<span style="font-family:Arial;font-size:14px;"><sup>9</sup></span><span style="font-family:Arial;font-size:14px;">As of February 2021</span> 
+</p>
+<p style="text-align:left;">
+	<span style="font-family:Arial;font-size:14px;"><sup>10</sup></span><span style="font-family:Arial;font-size:14px;">Including renowned Chinese companies such as Vanke, Ali, Shimao, China International Marine Containers (CIMC), SF Express, Midea, Country Garden and Fosun</span> 
+</p>
+<p style="text-align:left;">
+	<span><span style="font-family:Arial;"><span style="font-size:14px;"><sup>11</sup></span><span style="font-size:14px;">The alliance was launched by the Research Center of Criminal Jurisprudence of the Renmin University of China and well-established companies including JD.com, Tencent, Baidu, Wal-Mart China, P&amp;G, Lenovo, Midea, Xiaomi, Meituan, Vipshop, Li-Ning, Yonghui Superstores, and Joy Wing Mau.&nbsp;</span><br />
+</span></span> 
+</p></div>
+			<div></div>		</div>
+	</div>
+</div>
+<script>
+    $(function () {
+        $(".esg_idea1 .cont p").each(function(){
+            var c = $(this).attr("align")
+            $(this).css({
+                "text-align": c
+            })
+        })
+        $(".esg_idea1 .cont .p").each(function(){
+            var c = $(this).attr("align")
+            $(this).css({
+                "text-align": c
+            })
+        })
+
+    });
+</script>
+    <div class="x-footer">
+  <div class="x-wrap">
+    <!-- <p class="ftbj"><a href="http://www.fractal-technology.com" target="_blank">网站建设</a>：<a
+        href="http://www.fractal-technology.com" target="_blank">北京分形科技</a></p> -->
+    <div class="f1" style="min-height:14px;"><div class="about">Related websites<span class="mh">:</span></div>
+<div class="website">
+    <a  href="http://home.baidu.com/" target="_blank">About Baidu</a><a  href="http://ir.baidu.com/" target="_blank">About Baidu Investors</a><a  href="http://privacy.baidu.com" target="_blank">Baidu Privacy Protection Platform</a><a  href="http://help.baidu.com" target="_blank">Baidu User Service Center</a><a  href="http://help.baidu.com/personalinformation" target="_blank">Personal Information Protection</a></div></div>    <div class="f2">
+      <a>Copyright reserved © 2021 Baidu</a>
+    </div>
+    <div class="f3" style="min-height:14px;"><a  href="/en/contact.html">Contact Us</a></div>  </div>
+</div>
+</body>
+</html>

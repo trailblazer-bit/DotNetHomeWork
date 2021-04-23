@@ -1,0 +1,337 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="http://www.fractal-technology.com">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+                                                        <title>Risk Prevention and Control - Baidu ESG</title>
+                <meta name="keywords" content="Baidu ESG" />
+    <meta name="description" content="Sustainable development is impossible without a sound risk prevention and control system. We identify and analyze financial and non-financial risks in" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/plugs.css">
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/page.css">
+    <link rel="stylesheet" href="/Public/static/themes/en/css/jjl.css">
+    <script src="/Public/static/themes/en/js/plugs/jquery-1.11.3.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/jquery.placeholder.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/TweenMax.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/video.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/slick.js"></script>
+    <script src="/Public/static/themes/en/js/global.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/xRoll.js"></script>
+</head>
+<body>
+                <style>
+        .empty-data{ width:100%; font-size:25px; padding-top:8%; padding-bottom:8%; text-align: center;}
+        </style>
+            <style>
+#myalert{ display:none; }
+.recruit .block1{ height: auto}
+.layer{background:url(/Public/static/themes/image/con_mask.png);;position:fixed;left:0;right: 0;top:0;bottom: 0;width:100%;height:100%;z-index: 1000000;}
+.layer .myalert{padding:30px;background:#fff;width:240px;position:absolute;margin-top:-100px;top:50%;left:50%;margin-left:-120px;text-align:center; z-index: 100000}
+.layer .guan{background:url(/Public/static/themes/image/clos.png) no-repeat center; display:block;width:23px;height:23px;position:absolute;top:10px;right:10px;}
+.layer .text{padding-bottom:15px;font-size:16px;color:#474747;}
+.layer .button{background:none;border:1px solid #bbbbbb;width:91px;height:29px;font:14px/100% "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;color: #707070;}
+</style>
+<div id="myalert" class="layer">
+    <div class="myalert">
+        <a href="javascript:;" onclick="myalert_hide();" class="guan"></a>
+        <div class="text">Please enter keywords</div>
+        <a><button class="button" id="my_ok" style="cursor:pointer ;opacity: 1;transform: translateY(0px);">OK</button></a>
+    </div>
+</div>
+<script>
+function my_alert(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function my_alert2(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function myalert_hide(){
+    $('#myalert').hide();
+}
+</script>
+    <div class="gotop"><div class="s">top</div></div>
+
+<div class="x-header ">
+    <div class="menu-head">
+        <div class="logo"><a href="/en/index.html" class="p-show">
+    <img src="/Uploads/Picture/2020/05/25/s5ecb5f6d3fdfe.png" alt="" title="">
+</a>
+<a href="/en/index.html" class="m-show">
+    <img src="/Uploads/Picture/2020/05/25/s5ecb5f6d3fdfe.png" alt="" title="">
+</a></div>        <div class="menu-btn m-show"><span class="line"></span></div>
+        <div class="language">
+            <a href="/">中</a>
+        </div>
+    </div>
+
+    <div class="nav-mod" flex="dir:top box:justify">
+        <!-- <div class="search-box m-show" flex="dir:left box:last">
+            <div class="search-txt"><input type="text" class="search-input" placeholder="search..."></div>
+            <button class="search-submit" type="submit"></button>
+        </div> -->
+        <div class="nav-box nav-lv1"><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/index.html" >Home</a></div>
+        <!-- 二级导航需要同步 -->
+            </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/administration.html" >Our Management</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/detail/103.html" >ESG Concept</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/detail/102.html" >ESG Management</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/carbon.html" >Our Practices</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/carbon.html" >Promoting Sustainability</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/privacy.html" >Building Trust</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/development.html" >Nurturing Talents</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/Service.html" >Improving Service</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/innovation.html" >Contributing to Society</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/governance.html" >Corporate Governance</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/reportsNews.html" >Reports and News</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/esg_download.html" >Relevant Reports</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/news_list.html" >Relevant News</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/contact.html" >Contact Us</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/contact.html" >Contact Information</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/feedbac.html" >Feedback</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><script>
+    var IsIndex   = "42";
+    var now2 = window.location.pathname;
+    var nowurl    = "/en/governance.html";
+    var parent_id = "48";
+    var parents_id = "21";
+    if( IsIndex == 37){
+        $('.nav-lv1 .nav-lv1-item:first').addClass('cur').siblings().removeClass('cur');
+    }
+    if(IsIndex == 35){
+        $('.nav-lv1 .nav-lv1-item').eq(4).addClass('cur').siblings().removeClass('cur');
+    }
+    if(IsIndex == 32 || IsIndex == 33 || IsIndex == 34 || IsIndex == 31){
+        $('.nav-lv1 .nav-lv1-item').eq(3).addClass('cur').siblings().removeClass('cur');
+    }
+    if(parents_id == 21){
+        $('.nav-lv1 .nav-lv1-item').eq(2).addClass('cur').siblings().removeClass('cur');
+    }
+    $(".nav-lv1-tit a").each( function() {
+        var _that = $(this);
+        var listurlone = _that.attr('href');
+        var data_name = _that.attr('data-name');
+        if( nowurl == listurlone ) {
+            _that.parent().parent().addClass('cur').siblings().removeClass('cur');
+        }
+    });
+</script></div>    </div>
+</div>
+        <div class="x-container">
+	<div class="risk_control1">
+		<div class="x-wrap">
+			<div class="title">
+				                    <div class="h40">Risk Prevention and Control</div>			</div>
+			<div class="cont h16 justify"><p>
+	<span style="font-size:18px;">Sustainable development is impossible without a sound risk prevention and control system. We identify and analyze financial and non-financial risks in our operations, and form an effective risk prevention and control mechanism to assist the Company in achieving long-term stable operations.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Structure of risk management</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">Our board assesses and determines the nature and scale of potential risks and ensures the integrity and effectiveness of risk management and internal monitoring system.</span><span style="font-size:18px;"></span> 
+</p>
+<p>
+	<span style="font-size:18px;">Baidu has built a top-down structure for risk management to ensure the implementation of concrete work and control processes, including risk identification, assessment, and</span><span style="font-size:18px;">&nbsp;</span><span style="font-size:18px;">treatment. Led by the Committee of Sponsoring Organizations of the Treadway Commission, we have established a ‘three levels + three lines of defense’ risk management framework and clarified risk management and control procedures of risk identification, risk assessment, risk analysis, and risk responses.</span><span style="font-size:18px;"></span> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603dfe97b4cc7.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Risk identification</strong></span><span style="font-size:18px;"></span> 
+</p>
+<p>
+	<span style="font-size:18px;">On the basis of a complete risk prevention and control management system, Baidu carries out regular internal risk analysis and identification. We divide our businesses into different business circulations, based on which we conduct the risk identification and assessment to form a risk map. In response to high-risk issues identified by the risk map, Baidu formulates a one</span><span style="font-size:18px;">&nbsp;</span><span style="font-size:18px;">to three-year audit plan to ensure the effectiveness and longevity of risk prevention and control initiatives.&nbsp;</span> 
+</p>
+<p>
+	<span style="font-size:18px;">In 2020, we identified risks associated with finance, operations, fraud, network security, and external regulation. For details, please see the Baidu 2020 Annual Report</span><sup><span style="font-size:12px;">8</span></sup><span style="font-size:18px;">.</span><span style="font-size:18px;"></span> 
+</p>
+<p>
+	<span style="font-size:18px;"></span> 
+</p>
+<hr />
+<p>
+	<span style="font-size:14px;"><sup>8</sup></span><span style="font-size:14px;">Baidu 2020 Annual Report will be available at <a href="https://ir.baidu.com/" target="_blank">https://ir.baidu.com/</a>.</span> 
+</p></div>
+			<div></div>		</div>
+	</div>
+</div>
+<script>
+    $(function () {
+        $(".esg_idea1 .cont p").each(function(){
+            var c = $(this).attr("align")
+            $(this).css({
+                "text-align": c
+            })
+        })
+        $(".esg_idea1 .cont .p").each(function(){
+            var c = $(this).attr("align")
+            $(this).css({
+                "text-align": c
+            })
+        })
+
+    });
+</script>
+    <div class="x-footer">
+  <div class="x-wrap">
+    <!-- <p class="ftbj"><a href="http://www.fractal-technology.com" target="_blank">网站建设</a>：<a
+        href="http://www.fractal-technology.com" target="_blank">北京分形科技</a></p> -->
+    <div class="f1" style="min-height:14px;"><div class="about">Related websites<span class="mh">:</span></div>
+<div class="website">
+    <a  href="http://home.baidu.com/" target="_blank">About Baidu</a><a  href="http://ir.baidu.com/" target="_blank">About Baidu Investors</a><a  href="http://privacy.baidu.com" target="_blank">Baidu Privacy Protection Platform</a><a  href="http://help.baidu.com" target="_blank">Baidu User Service Center</a><a  href="http://help.baidu.com/personalinformation" target="_blank">Personal Information Protection</a></div></div>    <div class="f2">
+      <a>Copyright reserved © 2021 Baidu</a>
+    </div>
+    <div class="f3" style="min-height:14px;"><a  href="/en/contact.html">Contact Us</a></div>  </div>
+</div>
+</body>
+</html>

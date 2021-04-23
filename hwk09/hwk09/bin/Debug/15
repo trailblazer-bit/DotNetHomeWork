@@ -1,0 +1,469 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="http://www.fractal-technology.com">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+                                                        <title>Talent Assurance - Baidu ESG</title>
+                <meta name="keywords" content="Baidu ESG" />
+    <meta name="description" content="Human resources are the fundamental driver of business development. Baidu has been continuously exploring in talent pipeline development, talent recru" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/plugs.css">
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/Public/static/themes/en/css/page.css">
+    <link rel="stylesheet" href="/Public/static/themes/en/css/jjl.css">
+    <script src="/Public/static/themes/en/js/plugs/jquery-1.11.3.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/jquery.placeholder.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/TweenMax.min.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/video.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/slick.js"></script>
+    <script src="/Public/static/themes/en/js/global.js"></script>
+    <script src="/Public/static/themes/en/js/plugs/xRoll.js"></script>
+</head>
+<body>
+                <style>
+        .empty-data{ width:100%; font-size:25px; padding-top:8%; padding-bottom:8%; text-align: center;}
+        </style>
+            <style>
+#myalert{ display:none; }
+.recruit .block1{ height: auto}
+.layer{background:url(/Public/static/themes/image/con_mask.png);;position:fixed;left:0;right: 0;top:0;bottom: 0;width:100%;height:100%;z-index: 1000000;}
+.layer .myalert{padding:30px;background:#fff;width:240px;position:absolute;margin-top:-100px;top:50%;left:50%;margin-left:-120px;text-align:center; z-index: 100000}
+.layer .guan{background:url(/Public/static/themes/image/clos.png) no-repeat center; display:block;width:23px;height:23px;position:absolute;top:10px;right:10px;}
+.layer .text{padding-bottom:15px;font-size:16px;color:#474747;}
+.layer .button{background:none;border:1px solid #bbbbbb;width:91px;height:29px;font:14px/100% "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;color: #707070;}
+</style>
+<div id="myalert" class="layer">
+    <div class="myalert">
+        <a href="javascript:;" onclick="myalert_hide();" class="guan"></a>
+        <div class="text">Please enter keywords</div>
+        <a><button class="button" id="my_ok" style="cursor:pointer ;opacity: 1;transform: translateY(0px);">OK</button></a>
+    </div>
+</div>
+<script>
+function my_alert(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function my_alert2(text,callback) {
+    $('#myalert').show();
+    $('#myalert .myalert div').html(text);
+
+    $('#my_ok').click( function() {
+        $('#myalert').hide();
+
+        if (typeof(callback) == 'function') {
+            callback();
+            return false;
+        }
+    });
+}
+
+function myalert_hide(){
+    $('#myalert').hide();
+}
+</script>
+    <div class="gotop"><div class="s">top</div></div>
+
+<div class="x-header ">
+    <div class="menu-head">
+        <div class="logo"><a href="/en/index.html" class="p-show">
+    <img src="/Uploads/Picture/2020/05/25/s5ecb5f6d3fdfe.png" alt="" title="">
+</a>
+<a href="/en/index.html" class="m-show">
+    <img src="/Uploads/Picture/2020/05/25/s5ecb5f6d3fdfe.png" alt="" title="">
+</a></div>        <div class="menu-btn m-show"><span class="line"></span></div>
+        <div class="language">
+            <a href="/">中</a>
+        </div>
+    </div>
+
+    <div class="nav-mod" flex="dir:top box:justify">
+        <!-- <div class="search-box m-show" flex="dir:left box:last">
+            <div class="search-txt"><input type="text" class="search-input" placeholder="search..."></div>
+            <button class="search-submit" type="submit"></button>
+        </div> -->
+        <div class="nav-box nav-lv1"><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/index.html" >Home</a></div>
+        <!-- 二级导航需要同步 -->
+            </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/administration.html" >Our Management</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/detail/103.html" >ESG Concept</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/detail/102.html" >ESG Management</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/carbon.html" >Our Practices</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/carbon.html" >Promoting Sustainability</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/privacy.html" >Building Trust</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/development.html" >Nurturing Talents</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/Service.html" >Improving Service</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/innovation.html" >Contributing to Society</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/governance.html" >Corporate Governance</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/reportsNews.html" >Reports and News</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/esg_download.html" >Relevant Reports</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/news_list.html" >Relevant News</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><div class="nav-item nav-lv1-item">
+        <div class="nav-tit nav-lv1-tit" flex="dir:left box:last"><a class="nav-link nav-lv1-link"
+                href="/en/contact.html" >Contact Us</a><span class="arr"></span></div>
+        <!-- 二级导航需要同步 -->
+        <div class="nav-lv nav-lv2">
+                <div class="nav-grp">
+                    <div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/contact.html" >Contact Information</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="nav-item nav-lv2-item">
+                            <div class="nav-tit nav-lv2-tit">
+                                <div class="nav-link nav-lv2-link">
+                                    <!-- <div class="tag">E</div> -->
+                                    <div class="link-a">
+                                        <a href="/en/feedbac.html" >Feedback</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                </div>
+            </div>    </div><script>
+    var IsIndex   = "26";
+    var now2 = window.location.pathname;
+    var nowurl    = "/en/development.html";
+    var parent_id = "47";
+    var parents_id = "21";
+    if( IsIndex == 37){
+        $('.nav-lv1 .nav-lv1-item:first').addClass('cur').siblings().removeClass('cur');
+    }
+    if(IsIndex == 35){
+        $('.nav-lv1 .nav-lv1-item').eq(4).addClass('cur').siblings().removeClass('cur');
+    }
+    if(IsIndex == 32 || IsIndex == 33 || IsIndex == 34 || IsIndex == 31){
+        $('.nav-lv1 .nav-lv1-item').eq(3).addClass('cur').siblings().removeClass('cur');
+    }
+    if(parents_id == 21){
+        $('.nav-lv1 .nav-lv1-item').eq(2).addClass('cur').siblings().removeClass('cur');
+    }
+    $(".nav-lv1-tit a").each( function() {
+        var _that = $(this);
+        var listurlone = _that.attr('href');
+        var data_name = _that.attr('data-name');
+        if( nowurl == listurlone ) {
+            _that.parent().parent().addClass('cur').siblings().removeClass('cur');
+        }
+    });
+</script></div>    </div>
+</div>
+        <div class="x-container">
+	<div class="risk_control1">
+		<div class="x-wrap">
+			<div class="title">
+				                    <div class="h40">Talent Assurance</div>			</div>
+			<div class="cont h16 justify"><p>
+	<span style="font-size:18px;">Human resources are the fundamental driver of business development. Baidu has been continuously exploring in talent pipeline development, talent recruitment, and talent training, contributing to talent development.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Talent pool strategy</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">To reserve Baidu AI talents and support the national AI education training and the long-term talent reserve, Baidu practices the idea of AI empowerment, education first, and unites the government, enterprises, universities, research institutes, and other authoritative institutions to establish an AI talent cultivation ecosystem, in which students, professors, and developers can communicate mutually, by means of the industry-university-research collaboration, elite class, teaching empowerment, competition for learning, scholarship, etc. By the end of 2020, Baidu had cultivated over one million AI talents in China.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Industry-university-research collaboration</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">To bridge the gap between practice and theory, we have supported comprehensive strategic cooperation covering technology, products, platforms, and talent training with universities and research institutes such as Xi’an Jiaotong University, University of Science and Technology of China, Nanjing University, University of Chinese Academy of Sciences, and Zhejiang University.</span> 
+</p>
+<p style="text-align:center;">
+	<span style="font-family:Arial;line-height:1.5;font-size:18px;"><img src="/Uploads/Picture/2021/03/02/u603df7f088ade.png" title="from clipboard" alt="from clipboard" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:18px;">To strengthen the docking and coupling of various links in technological innovation, Baidu has maintained deep cooperation with major universities and research institutes in scientific research and resource sharing. Baidu has invested millions of CNY in the scientific research funds to support more than 200 industry-university-research projects through the “Pine Cone” Program, and has cooperated with more than 400 universities in the PaddlePaddle deep learning courses. In 2020, Baidu “Pine Cone” program was officially upgraded to CCF-Baidu Open Fund (hereinafter referred to as Open Fund). It is committed to building a platform for Industry-university-research collaboration and academic exchange for young scholars from universities and scientific research institutes at home and abroad and creating an AI Technology Ecosystem in China. In 2020, through one year of open and semi-open projects, Open Fund focused on scientific research and application, which provided millions of research funds, as well as multidimensional support and services in platform, data, and technology, which worth tens of millions of CNY.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Promoting learning through competition</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">By organizing industry-influential competitions including Baidu Star (Astar), China Collegiate Computing Contest —Artificial Intelligence Innovation Contest, and International Knowledge Center for Engineering Science and Technology (IKCEST), we helped foster a continuously growing pipeline of industry talents. For example, the long-running Astar is a high-level programming competition for Chinese university students, school children and programming enthusiasts, with two sub-events, Programming Competition and Developer Competition. Astar has been successfully held for 16 years since 2005. It not only provides a stage for contestants to show their skills and aptitudes, but also further promotes the development of technology in the industry.</span> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603df80b5fcb4.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Baidu Scholarship</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">The Baidu Scholarship was set up in 2013 to provide financial support for outstanding talent. Each year, we select eight to 10 top young talents and provide each with a grant of CNY 200,000, as well as other support such as data, platform, and expert guidance for their research work. Every year, Baidu Scholarship attracts nearly 10,000 students with Chinese origin around the world. Applicants are mainly from Switzerland, France, Italy, the United States, the United Kingdom, Australia, Singapore, Canada, Japan, China and other countries, covering the top AI fields of world-renowned universities<span style="font-size:12px;"><sup>22</sup></span>&nbsp;Master and PhD students.</span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Teaching empowerment</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">We recognize the challenges universities face in understanding the industry needs for AI talents, as well as in providing real industry datasets and practical cases. This is why we have been carrying out university-industry collaboration since 2015 by building university-industry docking platforms, promoting tertiary talent training reforms, and advancing AI + New Engineering subjects. We have joined with universities to reform AI curriculum teaching reform, helping universities to provide AI courses, build AI laboratories, improve AI faculty, and assist university students in practical AI projects. In six years, we have cumulatively committed nearly CNY 10 million in teaching and research funds in support of 367 projects at 212 universities, helping launch AI or deep learning courses at 156 universities, establishing AI and autonomous driving labs at 56 universities, and providing training and other forms of technical support for nearly 2,000 AI-related educators.</span> 
+</p>
+<p>
+	<span style="font-size:18px;">To lay a solid foundation for AI teaching, we partnered with Tsinghua University, University of Chinese Academy of Sciences, Dalian University of Technology, University of Science and Technology of China and other top universities in China to develop training courses and conduct training for teachers in the AI field. As of December 2020, 13 training sessions had been conducted. A total of 3,000 applications were received and over 1,800 teachers have attended the examination to participate in training. </span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Alpha College</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">We established Alpha College in 2018 to cultivate leaders in industrial intelligence transformation. The college’s one-year program aims to help business managers discover new opportunities brought by the integration of industry and AI through the mutual validation of AI technology and frontier industrial applications, promote cognitive upgrading and cultivate management talents with AI thinking and the ability to accelerate the implementation of industrial intelligence practices. </span> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Recruiting talent</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">We strictly abide by the Labor Law of the People’s Republic of China, Labor Contract Law of the People’s Republic of China , and other relevant laws and regulations. We have a fair and non-discriminatory employment policy and make every effort to ensure that there is no discrimination in hiring based on gender, geography, ethnicity, religion, age, pregnancy, marital status, disability, political stance, etc. We prohibit child labor and forced labor and respect and protect the legal rights and interests of all employees. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">We abide by the principle of fair and equitable recruitment. Our Management Standard of Baidu Recruitment enables us to carry out regular recruitment, as well as build a comprehensive talent team to meet our strategic and business development needs. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">As part of this, we began developing our intelligent recruitment system in 2015. This is applied to the entire recruitment process including resume evaluation, person-job fit, written exams. It anchors the screening criteria on work experience and personal ability to eliminate discrimination and interference from factors such as gender and education. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">We select interns and graduates from around the world through campus recruitment programs. Our campus recruitment programs cover four types of recruitment, including spring internship recruitment, autumn campus recruitment, overseas campus recruitment, and top campus talent recruitment. In addition, we have special recruitment programs such as the Campus AIDU program and directed intern training program to provide senior staff mentors and professional guidance to each selected intern and new employee.</span> 
+</p>
+<p style="text-align:center;">
+	<span style="font-family:Arial;font-size:18px;line-height:1.5;"><img src="/Uploads/Picture/2021/03/02/u603df836e6b29.png" title="from clipboard" alt="from clipboard" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:18px;">In 2020, owing to the COVID-19 pandemic, we launched live online presentations to encourage graduates to apply for jobs virtually. During the year, Baidu launched a total of 19 online live presentations, including four BG-level<span style="font-size:12px;"><sup>23</sup></span>&nbsp;sessions, eight functional sessions, and seven regional campus sessions, making our opportunities available to more than 7 million students. &nbsp;</span> 
+</p>
+<p>
+	<span style="font-size:18px;">Our recruiting programs also target experienced professionals. We regularly update postings on Baidu’s job site<span style="font-size:12px;"><sup>24</sup></span> and recruit high-level talent through headhunters with whom we have long cooperation histories.</span> 
+</p>
+<p>
+	<span style="font-size:18px;">In 2020, we earned titles including Forbes’ World’s Best Employer and Top 100 China Best Employer. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">Throughout 2020, we hired 11,326 new employees, including 4,398 female employees. As of December 31, 2020, we had &nbsp;31,370 regular employees and 1,861 interns. Among regular employees, the average age of male employees is 31 and the average age of female employees is 30.</span> 
+</p>
+<p style="text-align:center;">
+	<span style="font-family:Arial;font-size:18px;line-height:1.5;"><img src="/Uploads/Picture/2021/03/02/u603df855bb9f7.png" title="from clipboard" alt="from clipboard" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:18px;">Talent turnover is a significant issue among Internet companies. We continuously track employee turnover rate, summarize the reasons for employee turnover, and take targeted optimization and improvement measures to reduce employee turnover, thus retaining key talents.</span> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603df86d46cba.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p>
+	<span style="font-size:18px;"><strong>Training and development</strong></span> 
+</p>
+<p>
+	<span style="font-size:18px;">We have training courses and diverse self-improvement channels for all employees, from interns to management. According to Baidu Training Management Standard , our human resources department’s Learning and Development Center makes an annual training plan every year. This is based on an analysis of employees’ needs, combined with the company’s strategic objectives. It also factors in competence requirements for roles, performance appraisal, and employees’ personal development plans. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">The Baidu Talent Intelligence Center (TIC) uses a self-developed knowledge recommendation algorithm to analyze employee data in such fields as corporate training and knowledge learning. Combining with career development plans, it accurately recommends personalized knowledge and training modules to employees. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">Our online learning platform, online Baidu School, offers online course creation, search, learning, examination, evaluation and other services. As of December 31, 2020, more than 6,000 online courses had been offered in areas such as technology/R&amp;D, product/marketing, management/workplace, and activities/life. According to statistics, tens of thousands of employees log on to online Baidu School for online learning every day. Baidu divides employee training into required courses, open courses, specific training, and other training to provide high-quality training for all kinds of employees. Ongoing feedback is collected and used to continuously improve our training offering.</span> 
+</p>
+<p style="text-align:center;">
+	<span style="font-family:Arial;font-size:18px;line-height:1.5;"><img src="/Uploads/Picture/2021/03/02/u603df896cbf0f.png" title="from clipboard" alt="from clipboard" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:18px;">Baidu has established tailored training programs and manager training programs based on business content and employee needs. Among them, tailored training programs and manager training programs are designed for different business contents of different systems of the company, and the training forms include, without limitation, lectures and workshops. Training manager of each system will make the annual BG training plan each year. For employees from different functional areas, we have customized rich training courses to match their needs for professional knowledge acquisition and career development.</span> 
+</p>
+<p style="text-align:center;">
+	<img src="/Uploads/Picture/2021/03/02/u603df8ab3379a.png" title="from clipboard" alt="from clipboard" /> 
+</p>
+<p>
+	<span style="font-size:18px;">A new tailored training program, To B Empowerment Training, was introduced in 2020 to provide targeted training in three areas: new employee training (to help new employees integrate into Baidu quickly), backbone training (business-oriented training courses for product managers and sales managers) and product training (regular product knowledge training based on the progress of the Baidu AI Cloud product R&amp;D).</span> 
+</p>
+<p>
+	<span style="font-size:18px;">Manager training programs are courses based on the competency requirements for managers at different levels, aiming to improve their leadership skills and team productivity and cohesiveness. We have developed four leadership development programs to help everyone from new managers to directors develop specific skills and progress effectively including Starting to Lead, Forging Ahead, Mini MBA, and Navigate through the Management programs. We also encourage managers to improve their cappabilities and the company development through assessments and exams. In 2020, the training hours of Baidu managers reached 46 hours per person.</span> 
+</p>
+<p style="text-align:center;">
+	<span style="font-family:Arial;font-size:18px;line-height:1.5;"><img src="/Uploads/Picture/2021/03/02/u603df8c93d3fd.png" title="from clipboard" alt="from clipboard" /><br />
+</span> 
+</p>
+<p>
+	<span style="font-size:18px;">In order to strengthen the internal learning atmosphere and promote the precipitation and transfer of organizational knowledge, Baidu has established an internal trainer system and lifelong learning program. Candidates of internal trainers come from voluntary registration or business nomination. After passing the interviews and selection by the Baidu University, they are certified to give lectures. Then they will need to complete the teaching preparation and meet the requirements before formally teaching a class. There is a three-level recognition mechanism for internal trainers, namely certified, senior, and gold medal trainers. Currently, we have 257 internal trainers, including 26 senior trainers and 27 gold medal trainers. In 2020, internal trainers and managers delivered 296 courses in total. Driven by the company’s commitment to building a learning organization, 19 senior executives in Baidu became the trainers in the new employee orientation, which not only demonstrated Baidu’s corporate culture and shared their work experience, but also created a sense of belonging and pride for the organization. After the in-person lectures, the recordings were also uploaded to the online platform Baidu School for more employees to learn.</span> 
+</p>
+<p>
+	<span style="font-size:18px;">In 2020, we also introduced Baidu’s Learning Credits as an important company-wide system that covers all regular employees (and serves as a reference for interns) and guides the learning-driven development of all people at Baidu. It comprises of Manager Credits and “Classmate”<span style="font-size:12px;"><sup>26</sup></span> Credits, depending on its target audience. In 2020, the system offered four compulsory courses and 153 elective courses for classmate credits, which covered nearly 30,000 Baidu classmates. As of December 31, 2020, a total of 1,816,858 classmate points had been earned. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">We also enlist senior professors and third-party organizations to provide professional training. Through Baidu Research, we invite professors from well-known Chinese universities and U.S. universities to visit Baidu for cutting-edge technology sharing, covering areas such as vision, speech, natural language processing, knowledge mapping, and robotics. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">To train directors and directors in the pipeline, we invite senior professors from Renmin University of China and other renowned institutions to teach courses such as Organizational Management, Marketing, Financial Management, and Strategic Competence. These combine external theories with corporate practice, to inspire managers to think innovatively. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">In 2020, we signed a university-enterprise cooperation agreement with the MBA Office of Hong Kong University of Science and Technology (HKUST) to provide employees with opportunities for further education. </span> 
+</p>
+<p>
+	<span style="font-size:18px;">All Baidu employees receive training. In 2020, staff received an average of 37.3 training hours, a rise of 65.9% from 2019.</span> 
+</p>
+<p style="text-align:center;">
+	<span style="font-family:Arial;font-size:18px;line-height:1.5;"><img src="/Uploads/Picture/2021/03/02/u603df8e03c7cb.png" title="from clipboard" alt="from clipboard" /><br />
+</span> 
+</p>
+<hr />
+<p>
+	<span style="font-family:Arial;"><span style="font-size:14px;"><sup>22</sup></span></span><span style="font-family:Arial;font-size:14px;">Such as Harvard University, Stanford University, Massachusetts Institute of Technology, Carnegie Mellon University, Tsinghua University, Peking University, Zhejiang University, etc.</span> 
+</p>
+<p style="text-align:left;">
+	<span style="font-family:Arial;font-size:14px;"><sup>23</sup></span><span style="font-family:Arial;font-size:14px;">BG is short for Business Group</span>
+</p>
+<p style="text-align:left;">
+	<span style="font-family:Arial;"><span style="font-size:14px;"><sup>24</sup></span></span><span style="font-family:Arial;font-size:14px;">Baidu's job site:<a href="https://talent.baidu.com/external/baidu/index.html#/globalTalent" target="_blank">https://talent.baidu.com/external/baidu/index.html#/globalTalent</a></span>
+</p>
+<p style="text-align:left;">
+	<span style="font-family:Arial;"><span style="font-size:14px;"><sup>25</sup></span></span><span style="font-family:Arial;font-size:14px;">PM: Project Manager, Product Manager</span> 
+</p>
+<p style="text-align:left;">
+	<span style="font-family:Arial;"><span style="font-size:14px;"><sup>26</sup></span></span><span style="font-family:Arial;font-size:14px;">To create a workplace atmosphere for equal communication and continuous learning, Baidu calls employees “Classmates” and suggests they call each other’s names or “Classmates” instead of titles reflecting hierarchical relationships. Therefore, Baidu has earned its reputation as a university-like learning community in the Internet industry.</span> 
+</p></div>
+			<div></div>		</div>
+	</div>
+</div>
+<script>
+    $(function () {
+        $(".esg_idea1 .cont p").each(function(){
+            var c = $(this).attr("align")
+            $(this).css({
+                "text-align": c
+            })
+        })
+        $(".esg_idea1 .cont .p").each(function(){
+            var c = $(this).attr("align")
+            $(this).css({
+                "text-align": c
+            })
+        })
+
+    });
+</script>
+    <div class="x-footer">
+  <div class="x-wrap">
+    <!-- <p class="ftbj"><a href="http://www.fractal-technology.com" target="_blank">网站建设</a>：<a
+        href="http://www.fractal-technology.com" target="_blank">北京分形科技</a></p> -->
+    <div class="f1" style="min-height:14px;"><div class="about">Related websites<span class="mh">:</span></div>
+<div class="website">
+    <a  href="http://home.baidu.com/" target="_blank">About Baidu</a><a  href="http://ir.baidu.com/" target="_blank">About Baidu Investors</a><a  href="http://privacy.baidu.com" target="_blank">Baidu Privacy Protection Platform</a><a  href="http://help.baidu.com" target="_blank">Baidu User Service Center</a><a  href="http://help.baidu.com/personalinformation" target="_blank">Personal Information Protection</a></div></div>    <div class="f2">
+      <a>Copyright reserved © 2021 Baidu</a>
+    </div>
+    <div class="f3" style="min-height:14px;"><a  href="/en/contact.html">Contact Us</a></div>  </div>
+</div>
+</body>
+</html>
