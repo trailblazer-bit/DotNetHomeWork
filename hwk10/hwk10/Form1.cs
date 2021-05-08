@@ -77,5 +77,10 @@ namespace hwk10
             tasks[2].Start();
             this.lblInfo.Text = "爬虫启动中.....";
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

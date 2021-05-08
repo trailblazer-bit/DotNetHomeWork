@@ -31,15 +31,15 @@ namespace hwk10
         {
             this.components = new System.ComponentModel.Container();
             this.dgvCrawlURLInfo = new System.Windows.Forms.DataGridView();
+            this.index = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.URL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Info = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblInfo = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblURL = new System.Windows.Forms.Label();
             this.tbURL = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.index = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.URL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Info = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCrawlURLInfo)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -64,6 +64,33 @@ namespace hwk10
             this.dgvCrawlURLInfo.RowTemplate.Height = 27;
             this.dgvCrawlURLInfo.Size = new System.Drawing.Size(776, 327);
             this.dgvCrawlURLInfo.TabIndex = 0;
+            // 
+            // index
+            // 
+            this.index.DataPropertyName = "index";
+            this.index.HeaderText = "序号";
+            this.index.MinimumWidth = 6;
+            this.index.Name = "index";
+            this.index.ReadOnly = true;
+            this.index.Width = 125;
+            // 
+            // URL
+            // 
+            this.URL.DataPropertyName = "URL";
+            this.URL.HeaderText = "URL";
+            this.URL.MinimumWidth = 6;
+            this.URL.Name = "URL";
+            this.URL.ReadOnly = true;
+            this.URL.Width = 500;
+            // 
+            // Info
+            // 
+            this.Info.DataPropertyName = "Info";
+            this.Info.HeaderText = "信息";
+            this.Info.MinimumWidth = 6;
+            this.Info.Name = "Info";
+            this.Info.ReadOnly = true;
+            this.Info.Width = 180;
             // 
             // lblInfo
             // 
@@ -118,33 +145,6 @@ namespace hwk10
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // index
-            // 
-            this.index.DataPropertyName = "index";
-            this.index.HeaderText = "序号";
-            this.index.MinimumWidth = 6;
-            this.index.Name = "index";
-            this.index.ReadOnly = true;
-            this.index.Width = 125;
-            // 
-            // URL
-            // 
-            this.URL.DataPropertyName = "URL";
-            this.URL.HeaderText = "URL";
-            this.URL.MinimumWidth = 6;
-            this.URL.Name = "URL";
-            this.URL.ReadOnly = true;
-            this.URL.Width = 500;
-            // 
-            // Info
-            // 
-            this.Info.DataPropertyName = "Info";
-            this.Info.HeaderText = "信息";
-            this.Info.MinimumWidth = 6;
-            this.Info.Name = "Info";
-            this.Info.ReadOnly = true;
-            this.Info.Width = 180;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -155,6 +155,7 @@ namespace hwk10
             this.Controls.Add(this.dgvCrawlURLInfo);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCrawlURLInfo)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
