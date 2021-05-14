@@ -46,6 +46,7 @@ namespace OrderManageSystem
         public List<OrderDetail> OrderDetails
         {
             get { return this.orderDetails; }
+            set { this.orderDetails = value; }
         }
 
         public Order(int id,string customerName,DateTime orderTime)

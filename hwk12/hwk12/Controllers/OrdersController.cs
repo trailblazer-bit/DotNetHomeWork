@@ -33,6 +33,7 @@ namespace hwk12.Controllers
                 }
                 foreach (var detail in o.OrderDetails)
                 {
+                    orderDb.DBOrderDetail.Add(detail);
                     var good = new Good(detail.GoodName, detail.GoodPrice);
                     var result = orderDb.DBGood.ToList().FirstOrDefault(g => g.Name == good.Name);
                     if (result == null)
@@ -47,7 +48,6 @@ namespace hwk12.Controllers
             }
             return o;
         }
-
 
         //删除订单
         [HttpDelete("delete/{id}")]
@@ -70,11 +70,28 @@ namespace hwk12.Controllers
             return NoContent();
         }
 
-
         //修改订单
-
-
-
+        [HttpPut("update/{id}")]
+        public ActionResult<Order> PutOrder(long id,Order order)
+        {
+            if(id!=order.ID)
+            {
+                return BadRequest("Id cannot be modified");
+            }
+            try
+            {
+                DeleteOrder(id);
+                PostOrder(order);
+                orderDb.SaveChanges();
+            }
+            catch(Exception e)
+            {
+                string error = e.Message;
+                if (e.InnerException != null) error = e.InnerException.Message;
+                return BadRequest(error);
+            }
+            return NoContent();
+        }
 
         //查询订单
         public List<Order> getAll()
