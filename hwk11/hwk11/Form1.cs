@@ -101,7 +101,7 @@ namespace hwk08
         private void btn_ExportOrder_Click(object sender, EventArgs e)
         {
             //service.Export("orders.xml");
-
+            dao.Export();
             DialogResult result = MessageBox.Show("导出订单成功", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }

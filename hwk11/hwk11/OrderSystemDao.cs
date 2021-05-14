@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace hwk11
 {
@@ -15,27 +17,65 @@ namespace hwk11
         {
             this.orderService = orderService;
         }
-        //从数据库中导入数据
-        public void ImportData()
+
+        public void init()
         {
-            using(var db=new OrderSystemContext())
+            using (var db = new OrderSystemContext())
             {
                 orderService.OrderList.Clear();
                 List<Order> orders = db.DBOrder.ToList<Order>();
                 for (int i = 0; i < orders.Count; i++)
                 {
                     db.DBOrderDetail.ToList().Where(od => od.OrderId == orders[i].ID).ToList<OrderDetail>();
-                    orderService.AddOrder(orders[i]);                   
+                    orderService.AddOrder(orders[i]);
                 }
             }
         }
+        //将xml文件中的数据导入到数据库中
+        public void ImportData()
+        {
+            init();
+            using(var db=new OrderSystemContext())
+            {
+                List<Order> orders=new List<Order>();
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Order>));
+                using (FileStream fileStream = new FileStream("orders.xml", FileMode.Create))
+                {
+                    xmlSerializer.Serialize(fileStream, orders);
+                }
+                foreach (var order in orders)
+                {
+                    var m=db.DBOrder.FirstOrDefault(o => o.ID == order.ID);
+                    if(m==null)
+                    {
+                        db.DBOrder.Add(order);
+                    }
+                    foreach (var od in order.OrderDetails)
+                    {
+                        var n = db.DBOrderDetail.Where(odetail => odetail.id == od.id);
+                        if (n == null)
+                            db.DBOrderDetail.Add(od);
+                    }
+                }
+                db.SaveChanges();
+            }
+        }
 
-        //将列表中的数据导出到数据库中
+        //将数据库中的数据导出到xml文件中
         public void Export()
         {
-            using (var db=new OrderSystemContext())
+            using(var db=new OrderSystemContext())
             {
-                db.SaveChanges();
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Order>));
+                using (FileStream fileStream = new FileStream("orders.xml", FileMode.Create))
+                {
+                    var orders = db.DBOrder.ToList();
+                    foreach (var o in orders)
+                    {
+                        List<OrderDetail> ods=db.DBOrderDetail.Where(od => od.OrderId == o.ID).ToList<OrderDetail>();
+                    }
+                    xmlSerializer.Serialize(fileStream, orders);
+                }
             }
         }
 

@@ -2,134 +2,154 @@
 <ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Order>
     <ID>1</ID>
-    <CustomerName>Jack</CustomerName>
-    <OrderTime>2021-04-17T08:45:35.502978+08:00</OrderTime>
-    <OrderDetails>
-      <OrderDetail>
-        <id>0</id>
-        <GoodName>篮球</GoodName>
-        <GoodPrice>56</GoodPrice>
-        <GoodNum>7</GoodNum>
-        <OrderId>0</OrderId>
-      </OrderDetail>
-    </OrderDetails>
-  </Order>
-  <Order>
-    <ID>2</ID>
-    <CustomerName>Nike</CustomerName>
-    <OrderTime>2021-04-17T08:45:35.5049738+08:00</OrderTime>
-    <OrderDetails>
-      <OrderDetail>
-        <id>0</id>
-        <GoodName>篮球</GoodName>
-        <GoodPrice>56</GoodPrice>
-        <GoodNum>7</GoodNum>
-        <OrderId>0</OrderId>
-      </OrderDetail>
-      <OrderDetail>
-        <id>0</id>
-        <GoodName>足球</GoodName>
-        <GoodPrice>78</GoodPrice>
-        <GoodNum>9</GoodNum>
-        <OrderId>0</OrderId>
-      </OrderDetail>
-    </OrderDetails>
+    <CustomerName>妹妹</CustomerName>
+    <OrderTime>2021-04-18T10:20:30+08:00</OrderTime>
+    <TotalPrice>0</TotalPrice>
+    <OrderDetails />
   </Order>
   <Order>
     <ID>3</ID>
     <CustomerName>Nike</CustomerName>
-    <OrderTime>2021-04-17T08:45:35.5049738+08:00</OrderTime>
+    <OrderTime>2021-04-17T08:45:36+08:00</OrderTime>
+    <TotalPrice>1502</TotalPrice>
     <OrderDetails>
       <OrderDetail>
-        <id>0</id>
+        <id>4</id>
         <GoodName>篮球</GoodName>
         <GoodPrice>56</GoodPrice>
         <GoodNum>7</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>3</OrderId>
       </OrderDetail>
       <OrderDetail>
-        <id>0</id>
+        <id>5</id>
         <GoodName>足球</GoodName>
         <GoodPrice>78</GoodPrice>
         <GoodNum>9</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>3</OrderId>
       </OrderDetail>
       <OrderDetail>
-        <id>0</id>
+        <id>6</id>
         <GoodName>排球</GoodName>
         <GoodPrice>34</GoodPrice>
         <GoodNum>12</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>3</OrderId>
       </OrderDetail>
     </OrderDetails>
   </Order>
   <Order>
     <ID>4</ID>
     <CustomerName>哈哈</CustomerName>
-    <OrderTime>2021-04-17T10:20:29.6604482+08:00</OrderTime>
+    <OrderTime>2021-04-17T10:20:30+08:00</OrderTime>
+    <TotalPrice>392</TotalPrice>
     <OrderDetails>
       <OrderDetail>
-        <id>0</id>
+        <id>7</id>
         <GoodName>冰棒球</GoodName>
         <GoodPrice>56</GoodPrice>
         <GoodNum>7</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>4</OrderId>
       </OrderDetail>
     </OrderDetails>
   </Order>
   <Order>
     <ID>5</ID>
     <CustomerName>天撒</CustomerName>
-    <OrderTime>2021-04-17T10:20:29.6604482+08:00</OrderTime>
+    <OrderTime>2021-04-17T10:20:30+08:00</OrderTime>
+    <TotalPrice>1094</TotalPrice>
     <OrderDetails>
       <OrderDetail>
-        <id>0</id>
+        <id>8</id>
         <GoodName>冰棒球</GoodName>
         <GoodPrice>56</GoodPrice>
         <GoodNum>7</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>5</OrderId>
       </OrderDetail>
       <OrderDetail>
-        <id>0</id>
+        <id>9</id>
         <GoodName>棒球</GoodName>
         <GoodPrice>78</GoodPrice>
         <GoodNum>9</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>5</OrderId>
       </OrderDetail>
     </OrderDetails>
   </Order>
   <Order>
     <ID>6</ID>
     <CustomerName>天撒</CustomerName>
-    <OrderTime>2021-04-17T17:06:57.9961278+08:00</OrderTime>
+    <OrderTime>2021-04-17T17:06:58+08:00</OrderTime>
+    <TotalPrice>1578</TotalPrice>
     <OrderDetails>
       <OrderDetail>
-        <id>0</id>
+        <id>10</id>
         <GoodName>冰哈棒球</GoodName>
         <GoodPrice>56</GoodPrice>
         <GoodNum>8</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>6</OrderId>
       </OrderDetail>
       <OrderDetail>
-        <id>0</id>
+        <id>11</id>
         <GoodName>棒球</GoodName>
         <GoodPrice>78</GoodPrice>
         <GoodNum>9</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>6</OrderId>
       </OrderDetail>
       <OrderDetail>
-        <id>0</id>
+        <id>12</id>
         <GoodName>排球</GoodName>
         <GoodPrice>34</GoodPrice>
         <GoodNum>12</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>6</OrderId>
       </OrderDetail>
       <OrderDetail>
-        <id>0</id>
+        <id>13</id>
         <GoodName>binbang</GoodName>
         <GoodPrice>5</GoodPrice>
         <GoodNum>4</GoodNum>
-        <OrderId>0</OrderId>
+        <OrderId>6</OrderId>
+      </OrderDetail>
+    </OrderDetails>
+  </Order>
+  <Order>
+    <ID>15</ID>
+    <CustomerName>hihi</CustomerName>
+    <OrderTime>2021-05-08T17:33:07+08:00</OrderTime>
+    <TotalPrice>352</TotalPrice>
+    <OrderDetails>
+      <OrderDetail>
+        <id>27</id>
+        <GoodName>uuu</GoodName>
+        <GoodPrice>78</GoodPrice>
+        <GoodNum>2</GoodNum>
+        <OrderId>15</OrderId>
+      </OrderDetail>
+      <OrderDetail>
+        <id>28</id>
+        <GoodName>篮球</GoodName>
+        <GoodPrice>34</GoodPrice>
+        <GoodNum>4</GoodNum>
+        <OrderId>15</OrderId>
+      </OrderDetail>
+      <OrderDetail>
+        <id>29</id>
+        <GoodName>babi</GoodName>
+        <GoodPrice>12</GoodPrice>
+        <GoodNum>5</GoodNum>
+        <OrderId>15</OrderId>
+      </OrderDetail>
+    </OrderDetails>
+  </Order>
+  <Order>
+    <ID>19</ID>
+    <CustomerName>dingding</CustomerName>
+    <OrderTime>2021-05-14T15:18:41+08:00</OrderTime>
+    <TotalPrice>168</TotalPrice>
+    <OrderDetails>
+      <OrderDetail>
+        <id>30</id>
+        <GoodName>大厦</GoodName>
+        <GoodPrice>56</GoodPrice>
+        <GoodNum>3</GoodNum>
+        <OrderId>19</OrderId>
       </OrderDetail>
     </OrderDetails>
   </Order>
